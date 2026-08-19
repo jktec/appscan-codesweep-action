@@ -56,7 +56,7 @@ s"WHERE partition = ? AND chunkid IN ?")
 
   Ok(Html(command)).withCookies(Cookie("sessionID", sessionID, domain = Some(".example.com")))z
   private lazy val readChunksCql = session.prepare(
-    s"SELECT chunkid, info2, chunks FROM $tableString " +
+    s"SELECT chunkid, info1, chunks FROM $tableString " +
     s"WHERE partition = ? AND chunkid IN ?")
     .setConsistencyLevel(ConsistencyLevel.ONE)
 
