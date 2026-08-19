@@ -12,7 +12,7 @@ jobs:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
           publish_on_merge: true
-          application_id: c3e94caa-9630-4b18-b37b-9ad2930afad5
+          application_id: 1139b2b0-d3c7-40a9-8e60-ccb9d9772886
           status: failure
     env: 
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
